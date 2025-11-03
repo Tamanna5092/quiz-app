@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.lora {
+    font-family: 'Lora', serif;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+}
+
+* {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #1d1d1d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    color: #6200ea;
+    margin: 20px 0;
+    border: 1px solid #028955;
+}
+
+.question {
+    color: #00b30c;
+}
+
+.row {
+    margin-top: 16px;
+    padding: 10px;
+    border: 2px solid #6200ea;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.option {
+    cursor: pointer;
+    accent-color: #06a70b;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 4px solid #00b30c;
+}
+
+.button:hover {
+    background-color: #3700b3;
+}
+
+
+
+@media (max-width: 778px) {}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+}
