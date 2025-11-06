@@ -10,25 +10,32 @@
 
 <body>
     <div class="container">
-        <h3 class="question">Welcome to the Quiz App This is my first question</h3>
-        <div class="row">
-            <input class="option" type="radio" id="option-a" name="quiz-option" value="a">
-            <label>Option 1</label>
+        <div class="welcome-box" id="welcome-box">
+            <h1>Welcome To Quiz App</h1>
+            <p class="subtitle">Start your quiz game</p>
+            <button class="button" id="start-btn">👉 Click Here</button>
         </div>
-        <div class="row">
-            <input class="option" type="radio" id="option-b" name="quiz-option" value="a">
-            <label>Option 1</label>
-        </div>
-        <div class="row">
-            <input class="option" type="radio" id="option-c" name="quiz-option" value="a">
-            <label>Option 1</label>
-        </div>
-        <div class="row">
-            <input class="option" type="radio" id="option-d" name="quiz-option" value="a">
-            <label>Option 1</label>
-        </div>
-        <div class="btn-div">
-            <button class="button" id="submit">Submit</button>
+        <div class="box" id="box">
+            <h3 class="question" id="question"></h3>
+            <div class="row">
+                <input class="option" type="radio" id="option-a" name="quiz-option" value="a">
+                <label for="option-a">Option 1</label>
+            </div>
+            <div class="row">
+                <input class="option" type="radio" id="option-b" name="quiz-option" value="b">
+                <label for="option-b">Option 1</label>
+            </div>
+            <div class="row">
+                <input class="option" type="radio" id="option-c" name="quiz-option" value="c">
+                <label for="option-c">Option 1</label>
+            </div>
+            <div class="row">
+                <input class="option" type="radio" id="option-d" name="quiz-option" value="d">
+                <label for="option-d">Option 1</label>
+            </div>
+            <div class="btn-div">
+                <button onclick={submitQuiz()} class="button" id="submit">Submit</button>
+            </div>
         </div>
     </div>
 
